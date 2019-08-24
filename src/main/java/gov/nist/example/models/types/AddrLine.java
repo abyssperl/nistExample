@@ -65,4 +65,11 @@ public class AddrLine {
         this.content = value;
     }
 
+	@Override
+	public String toString() {
+		return "AddrLine [content=" + content + "]";
+	}
+    
+    
+
 }

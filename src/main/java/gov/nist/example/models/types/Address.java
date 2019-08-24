@@ -212,4 +212,12 @@ public class Address {
         this.type = value;
     }
 
+	@Override
+	public String toString() {
+		return "Address [addrLine=" + addrLine + ", city=" + city + ", state=" + state + ", postalCode=" + postalCode
+				+ ", country=" + country + ", type=" + type + "]";
+	}
+    
+    
+
 }

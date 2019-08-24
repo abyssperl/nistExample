@@ -1,6 +1,7 @@
 package gov.nist.example.types;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.FileReader;
 import java.nio.file.Path;
@@ -36,6 +37,7 @@ public class TestMetaData {
 		Metadata m = c.getMetadata();
 		System.out.println(m);
 		assertNotNull(m);
+		assertTrue(m.getVersion().getContent() != null);
 	}
 
 

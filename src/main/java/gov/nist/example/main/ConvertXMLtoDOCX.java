@@ -50,6 +50,7 @@ public class ConvertXMLtoDOCX {
 		XWPFDocument document = new XWPFDocument();
 		XWPFParagraph paragraph = document.createParagraph();
 		XWPFRun run = paragraph.createRun();
+		run.setText(c.toString());
 		try (FileOutputStream out = new FileOutputStream(new File(docx.getFileName()))) {
 			document.write(out);
 			System.out.println("Wrote something.");

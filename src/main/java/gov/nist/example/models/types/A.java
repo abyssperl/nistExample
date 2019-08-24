@@ -126,9 +126,19 @@ public class A {
     public void setHref(String value) {
         this.href = value;
     }
+    
+    
 
 
-    /**
+    @Override
+	public String toString() {
+		return "A [content=" + content + ", href=" + href + "]";
+	}
+
+
+
+
+	/**
      * <p>Java class for anonymous complex type.
      * 
      * <p>The following schema fragment specifies the expected content contained within this class.
@@ -204,6 +214,13 @@ public class A {
         public void setClazz(String value) {
             this.clazz = value;
         }
+
+		@Override
+		public String toString() {
+			return "Em [content=" + content + ", clazz=" + clazz + "]";
+		}
+        
+        
 
     }
 
